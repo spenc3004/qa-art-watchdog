@@ -10,6 +10,10 @@ import requests
 import json
 
 from dotenv import load_dotenv
+
+BASE_DIR = Path(__file__).resolve().parent
+load_dotenv(BASE_DIR / ".env")
+
 from watchdog.events import FileCreatedEvent, FileSystemEventHandler
 from watchdog.observers import Observer
 
@@ -21,7 +25,6 @@ FILENAME_PATTERN = re.compile(r"^(\d+)_(\d+)_(\d+)_.+_(?:unflat|flat)(\d+)\.pdf$
 
 
 def get_qa_config() -> tuple[str, str]:
-    load_dotenv()
     qa_url = os.getenv("QA_SERVER")
     qa_api_key = os.getenv("QA_API_KEY")
 
