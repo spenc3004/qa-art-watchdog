@@ -30,14 +30,12 @@ The watcher only processes PDFs that match these pattern:
 
 ```text
 <client_id>_<contract_id>_<order_line>_<anything>_unflat<version>.pdf
-<client_id>_<contract_id>_<order_line>_<anything>_flat<version>.pdf
 ```
 
 Example:
 
 ```text
 123_456789_1_some-mailpiece_unflat2.pdf
-123_456789_1_some-mailpiece_flat2.pdf
 ```
 
 Parsed values:
