@@ -20,7 +20,7 @@ from watchdog.observers import Observer
 from db import get_contract_order_detail, insert_art_result
 
 
-FILENAME_PATTERN = re.compile(r"^(\d+)_(\d+)_(\d+)_.+_(?:unflat|flat)(\d+)\.pdf$")
+FILENAME_PATTERN = re.compile(r"^(\d+)_(\d+)_(\d+)_.+_unflat(\d+)\.pdf$")
 
 
 
